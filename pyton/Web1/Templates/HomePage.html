@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block main %}
+    <!-- הוספת תמונה בולטת בראש הדף -->
+    <header>
+        <div class="container-fluid" style="background-image: url('{% static 'images/3.jpg' %}'); background-size: cover; background-position: center; height: 500px; display: flex; justify-content: center; align-items: center; color: white; border-radius: 10px;">
+            <h1 style="font-family: 'Arial', sans-serif; font-size: 3rem; text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6); text-align: center; margin: 0;">ברוך הבא למערכת קניית ומכירת דירות</h1>
+        </div>
+    </header>
+
+    <!-- תוכן עמוד הבית -->
+    <div class="container mt-5" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        <h2 style="color: #2a2a2a; font-size: 2.5rem; text-align: center;">הדרך הקלה והמהירה למצוא את הבית הבא שלך או למכור את דירתך.</h2>
+        <p style="color: #555555; font-size: 1.2rem; line-height: 1.6; text-align: center;">אנו מזמינים אותך להצטרף למערכת הקלה והנוחה שלנו, שתעזור לך למצוא את הדירה שתמיד רצית או למכור את הנכס שלך.</p>
+        <p style="color: #555555; font-size: 1.2rem; line-height: 1.6; text-align: center;">המערכת מאפשרת לכל אדם לבחור את הדרך המתאימה לו:</p>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="card" style="border: 1px solid #e0e0e0; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); padding: 20px; background-color: #f9f9f9;">
+                    <h4 style="color: #4CAF50; font-size: 1.5rem;">מוכר דירה</h4>
+                    <p style="color: #777777; font-size: 1rem; line-height: 1.6;">פרסם את הדירה שלך עם פרטים מלאים, העלה תמונות ותהנה ממערכת סינון שתעזור לך להגיע לקונים הפוטנציאליים במהרה.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card" style="border: 1px solid #e0e0e0; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); padding: 20px; background-color: #f9f9f9;">
+                    <h4 style="color: #4CAF50; font-size: 1.5rem;">קונה דירה</h4>
+                    <p style="color: #777777; font-size: 1rem; line-height: 1.6;">חפש את הדירה המושלמת בעזרת סינון פרמטרים על פי הצרכים שלך, שלח פניות ישירות למוכרים ותמצא את הבית החדש שלך!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center mt-5">
+            <a href="#" class="btn btn-success mx-2" style="font-size: 1.1rem; padding: 10px 20px; border-radius: 25px;">התחל כקונה</a>
+            <a href="#" class="btn btn-success mx-2" style="font-size: 1.1rem; padding: 10px 20px; border-radius: 25px;">התחל כמוכר</a>
+            <a href="#" class="btn btn-outline-success mx-2" style="font-size: 1.1rem; padding: 10px 20px; border-radius: 25px;">לפרטים נוספים</a>
+        </div>
+    </div>
+{% endblock %}

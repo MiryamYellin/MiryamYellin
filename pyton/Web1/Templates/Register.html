@@ -1,0 +1,10 @@
+{% extends 'Layout.html' %}
+{% load static %}
+{% block main %}
+<form method="POST">
+    {% csrf_token %}
+    {{userForm.as_p}}
+
+    <button type="submit">Register</button>
+</form>
+{% endblock %}

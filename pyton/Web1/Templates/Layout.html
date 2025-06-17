@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>מערכת קניית ומכירת דירות - הדרך הקלה והמהירה למצוא את הבית הבא שלך</title>
+    <link href="{% static 'Bootstrap/css/bootstrap.theme.min.css' %}" rel="stylesheet">
+    <link href="{% static 'Bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <script src="{% static 'Bootstrap/js/bootstrap.min.js' %}"></script>
+    <style>
+        /* הוספת רווח בין ה-main לפוטר */
+        main {
+            margin-bottom: 50px; /* ניתן לשנות את הגודל על פי הצורך */
+        }
+    </style>
+</head>
+<body dir="rtl">
+<header> {% include 'NavBar.html' %}</header>
+<main>
+    {% block main %}
+    {% endblock %}
+</main>
+
+<!-- Footer Design -->
+<footer style="background-color: #2c3e50; color: white; padding: 30px 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 20px;">קישורים שימושיים</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" style="color: white; text-decoration: none;">הבית</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">צור קשר</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">אודות</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 20px;">עקוב אחרינו</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" style="color: white; text-decoration: none;">פייסבוק</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">אינסטגרם</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">לינקדאין</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 20px;">הצטרף אלינו</h5>
+                <p style="font-size: 1rem;">קבל עדכונים ישירות לתיבת הדואר שלך על דירות חדשות למכירה!</p>
+                <form>
+                    <input type="email" placeholder="הכנס את הדוא"ל שלך" style="padding: 10px; border-radius: 5px; width: 80%; margin-bottom: 10px;">
+                    <button type="submit" class="btn btn-success" style="border-radius: 20px; padding: 10px 20px; font-size: 1rem;">הירשם</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top: 30px; font-size: 1rem; border-top: 1px solid #34495e; padding-top: 10px;">
+        <p>© DjangoCourse 2024. כל הזכויות שמורות.</p>
+    </div>
+</footer>
+
+</body>
+</html>
